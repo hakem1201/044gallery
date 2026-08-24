@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="3連作Prompt">
+<meta name="theme-color" content="#f6f2ea">
+<title>3連作アート プロンプト集</title>
+<style>
+:root {
+  --bg:#f6f2ea;
+  --card:#fff;
+  --ink:#20242a;
+  --muted:#6f747b;
+  --line:#e7dfd3;
+  --accent:#365f78;
+  --accent2:#2c7a62;
+}
+* { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+html,body { margin:0; padding:0; background:var(--bg); color:var(--ink); }
+body {
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif;
+  min-height:100vh;
+  padding-top:env(safe-area-inset-top);
+  padding-bottom:env(safe-area-inset-bottom);
+}
+.wrap { max-width:760px; margin:0 auto; padding:16px 12px 40px; }
+.hero {
+  position:sticky; top:0; z-index:10;
+  background:rgba(246,242,234,.94); backdrop-filter:blur(14px);
+  padding:12px 4px 10px; border-bottom:1px solid rgba(0,0,0,.05);
+}
+h1 { margin:0; font-size:24px; letter-spacing:.01em; }
+.sub { margin-top:6px; color:var(--muted); font-size:13px; line-height:1.6; }
+.card {
+  background:var(--card); border:1px solid var(--line); border-radius:18px;
+  padding:14px; margin:14px 0; box-shadow:0 5px 18px rgba(0,0,0,.045);
+}
+.card-head { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:10px; }
+h2 { margin:0; font-size:17px; line-height:1.45; }
+.copy {
+  flex:0 0 auto; border:0; border-radius:999px; padding:10px 14px;
+  font-size:14px; font-weight:700; cursor:pointer;
+}
+.primary { background:var(--accent); color:#fff; }
+.copy.copied { background:var(--accent2); }
+textarea {
+  width:100%; min-height:330px; border:1px solid #ddd6ca; border-radius:13px;
+  padding:13px; background:#fbfaf8; color:#222; font-size:14px; line-height:1.75;
+  resize:vertical; -webkit-user-select:text; user-select:text;
+}
+.tip {
+  margin:10px 2px 0; padding:12px 14px; border-radius:14px;
+  background:#fffaf2; border:1px solid #eadcc9; color:#5d554b; font-size:13px; line-height:1.7;
+}
+footer { color:var(--muted); font-size:12px; line-height:1.7; padding:10px 2px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <h1>3連作アート Prompt</h1>
+    <div class="sub">各パターンの冒頭にA4縦3枚セット用のサイズ指定を入れています。<br>「全文コピー」を押すだけで、そのまま作画依頼に使えます。</div>
+  </div>
+
+  <div class="tip">
+    iPhoneではSafariで開き、共有 →「ホーム画面に追加」でアイコン化できます。ホーム画面から開けば、専用ツールのように使えます。
+  </div>
+
+  
+    <section class="card">
+      <div class="card-head">
+        <h2>01 ネイビー × ベージュ × ブルーグレー</h2>
+        <button class="copy primary" onclick="copyText('full1', this)">全文コピー</button>
+      </div>
+      <textarea id="full1" readonly>幅630mm / 高さ297mmの横長キャンバスを想定した、A4縦3枚セット用の3連作を作成してください。
+全体は3等分したときに、各パネルがA4縦（210×297mm）の比率になるようにしてください。
+印刷用途として高解像度を意識し、最終的に全体7440×3508px相当、各パネル2480×3508px相当へ仕上げやすい構図にしてください。
+重要なモチーフや筆致がパネル境界で不自然に切れないよう配慮しつつ、3枚を並べたときには1つの作品として流れと統一感が感じられる構成にしてください。
+
+ネイビー、ブルーグレー、アイボリー、ベージュを基調にした、洗練された抽象アートの3連作を作成してください。
+縦長の3枚セットで、左・中央・右が統一感を持ちながら、それぞれ少しずつ異なるデザインにしてください。
+大きめの色面を重ねる構成で、厚塗りのアクリル画・油彩画のような筆致と上質なテクスチャを加えてください。
+3枚を並べたときに流れやリズムが感じられ、インテリアとして非常に飾りやすいバランスにしてください。
+雰囲気は北欧モダン、ホテルライク、落ち着き、高級感、静けさ。
+派手すぎず、余白を活かしたミニマルで上品な作品にしてください。
+文字、人物、動物、具体的なモチーフは入れないでください。
+インテリアポスター販売向けの、売れ筋感のある洗練されたデザインにしてください。</textarea>
+    </section>
+    
+    <section class="card">
+      <div class="card-head">
+        <h2>02 ミント × ベージュ / 癒し系</h2>
+        <button class="copy primary" onclick="copyText('full2', this)">全文コピー</button>
+      </div>
+      <textarea id="full2" readonly>幅630mm / 高さ297mmの横長キャンバスを想定した、A4縦3枚セット用の3連作を作成してください。
+全体は3等分したときに、各パネルがA4縦（210×297mm）の比率になるようにしてください。
+印刷用途として高解像度を意識し、最終的に全体7440×3508px相当、各パネル2480×3508px相当へ仕上げやすい構図にしてください。
+重要なモチーフや筆致がパネル境界で不自然に切れないよう配慮しつつ、3枚を並べたときには1つの作品として流れと統一感が感じられる構成にしてください。
+
+優しい色合いの抽象アート3連作を作成してください。
+縦長の3枚セットで、統一感がありながら各パネルに個性のある構成にしてください。
+色はミントグリーン、淡いターコイズ、アイボリー、サンドベージュ、ライトグレーを中心にしてください。
+水彩とアクリルを組み合わせたような柔らかい質感で、ところどころに繊細な筆跡と淡いにじみを感じる表現にしてください。
+清潔感、透明感、ナチュラルモダン、癒しのある雰囲気にしてください。
+3枚を並べたときに波や流れがゆるやかにつながるように構成し、余白を活かした上品なデザインにしてください。
+文字や人物は入れず、インテリアポスターとして販売しやすい洗練された作品にしてください。</textarea>
+    </section>
+    
+    <section class="card">
+      <div class="card-head">
+        <h2>03 グレージュ × ブラック × ゴールド / 高級感</h2>
+        <button class="copy primary" onclick="copyText('full3', this)">全文コピー</button>
+      </div>
+      <textarea id="full3" readonly>幅630mm / 高さ297mmの横長キャンバスを想定した、A4縦3枚セット用の3連作を作成してください。
+全体は3等分したときに、各パネルがA4縦（210×297mm）の比率になるようにしてください。
+印刷用途として高解像度を意識し、最終的に全体7440×3508px相当、各パネル2480×3508px相当へ仕上げやすい構図にしてください。
+重要なモチーフや筆致がパネル境界で不自然に切れないよう配慮しつつ、3枚を並べたときには1つの作品として流れと統一感が感じられる構成にしてください。
+
+ラグジュアリーでモダンな抽象アート3連作を作成してください。
+3枚の縦長パネルで、左・中央・右に連続性のある構成にしてください。
+色はグレージュ、アイボリー、チャコールグレー、ブラックを中心に、アクセントとして控えめなゴールドを少量だけ加えてください。
+質感は厚みのあるアクリル画風で、重なり合う色面、かすれた筆跡、やや立体感のある塗りにしてください。
+抽象的で都会的、洗練されていて高級ホテルのロビーに飾られているような雰囲気にしてください。
+ごちゃごちゃしすぎず、ミニマルでアート性の高い構図にしてください。
+文字、人物、具体的な風景や花などは入れないでください。</textarea>
+    </section>
+    
+    <section class="card">
+      <div class="card-head">
+        <h2>04 海を感じる抽象3連作</h2>
+        <button class="copy primary" onclick="copyText('full4', this)">全文コピー</button>
+      </div>
+      <textarea id="full4" readonly>幅630mm / 高さ297mmの横長キャンバスを想定した、A4縦3枚セット用の3連作を作成してください。
+全体は3等分したときに、各パネルがA4縦（210×297mm）の比率になるようにしてください。
+印刷用途として高解像度を意識し、最終的に全体7440×3508px相当、各パネル2480×3508px相当へ仕上げやすい構図にしてください。
+重要なモチーフや筆致がパネル境界で不自然に切れないよう配慮しつつ、3枚を並べたときには1つの作品として流れと統一感が感じられる構成にしてください。
+
+海をイメージした抽象アート3連作を作成してください。
+縦長の3枚セットで、3枚を並べると大きな流れが感じられるようにしてください。
+色はディープブルー、アクアブルー、白、淡いグレー、砂浜を思わせるベージュを使用してください。
+具体的な海の風景ではなく、波や光、水面の気配を抽象的に表現してください。
+質感はアクリル画・油彩画風で、ブラシストロークやマチエールを感じる上質な仕上がりにしてください。
+清涼感、透明感、静けさ、モダンな高級感を持つ作品にしてください。
+インテリアポスターとして飾りやすく、北欧・ナチュラルモダンの部屋に合うデザインにしてください。</textarea>
+    </section>
+    
+    <section class="card">
+      <div class="card-head">
+        <h2>05 シンプル・余白多め</h2>
+        <button class="copy primary" onclick="copyText('full5', this)">全文コピー</button>
+      </div>
+      <textarea id="full5" readonly>幅630mm / 高さ297mmの横長キャンバスを想定した、A4縦3枚セット用の3連作を作成してください。
+全体は3等分したときに、各パネルがA4縦（210×297mm）の比率になるようにしてください。
+印刷用途として高解像度を意識し、最終的に全体7440×3508px相当、各パネル2480×3508px相当へ仕上げやすい構図にしてください。
+重要なモチーフや筆致がパネル境界で不自然に切れないよう配慮しつつ、3枚を並べたときには1つの作品として流れと統一感が感じられる構成にしてください。
+
+売れ筋のインテリアアートを意識した抽象3連作を作成してください。
+3枚の縦長ポスターで、統一感があり、シンプルで洗練されたデザインにしてください。
+色はブルーグレー、アイボリー、ベージュ、ホワイト、ネイビーを中心にしてください。
+余白をしっかり活かし、大きめの色ブロックと柔らかな筆跡で構成してください。
+中央の作品をやや主役感のある構図にし、左右は補完し合うようなバランスにしてください。
+高級感、静けさ、品のよさを感じる仕上がりにしてください。
+文字、ロゴ、人物、動物、具体的な風景は入れないでください。
+インテリアポスター販売向きの、万人受けしやすい作品にしてください。</textarea>
+    </section>
+    
+
+  <footer>
+  ※ 生成AIは指定した7440×3508pxを厳密に出力しない場合があります。まずA4縦3等分の比率・構図・連続性を優先し、採用後にアップスケールして最終サイズへ整える運用がおすすめです。
+  </footer>
+</div>
+
+<script>
+async function copyText(id, btn) {
+  const el = document.getElementById(id);
+  const text = el.value;
+  let ok = false;
+  try {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(text);
+      ok = true;
+    }
+  } catch (e) {}
+  if (!ok) {
+    el.focus();
+    el.select();
+    el.setSelectionRange(0, 999999);
+    try { ok = document.execCommand('copy'); } catch(e) {}
+  }
+  const old = btn.textContent;
+  btn.textContent = ok ? 'コピー完了 ✓' : '選択しました';
+  btn.classList.add('copied');
+  setTimeout(() => {
+    btn.textContent = old;
+    btn.classList.remove('copied');
+  }, 1400);
+}
+</script>
+</body>
+</html>
